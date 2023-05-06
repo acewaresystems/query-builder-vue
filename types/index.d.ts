@@ -1,25 +1,43 @@
 import { Component } from 'vue';
 import { SortableOptions } from 'sortablejs';
+export enum RuleSetComparator {
+  AND = 'AND',
+  OR = 'OR'
+}
+
+export enum RuleConditions {
+  EQUALS='EQUALS',
+  NOT_EQUALS='NOT_EQUALS',
+  GREATER_THAN='GREATER_THAN',
+  LESS_THAN='LESS_THAN',
+  LIKE='LIKE',
+  STARTS_WITH='STARTS_WITH',
+  ENDS_WITH='ENDS_WITH',
+  CONTAINS='CONTAINS',
+  IS_NULL='IS_NULL',
+  NOT_NULL='NOT_NULL'
+}
 
 export interface Rule {
-  identifier: string,
-  value: any,
+  column: string
+  condition: RuleConditions
+  value: any
 }
 
 export interface RuleSet {
-  operatorIdentifier: string,
+  comparator: RuleSetComparator,
   children: Array<RuleSet | Rule>,
 }
 
 export interface OperatorDefinition {
-  identifier: string,
+  identifier: RuleSetComparator,
   name: string,
 }
 
 export interface RuleDefinition {
-  identifier: string,
-  name: string,
-  component: Component | string,
+  column: string,
+  conditions: RuleConditions[]
+  component: Component,
   initialValue?: any,
 }
 
