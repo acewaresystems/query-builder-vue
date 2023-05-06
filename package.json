@@ -1,0 +1,71 @@
+{
+  "name": "@aceware/query-builder-vue",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/rtucek/vue-query-builder",
+  "description": "A query-builder library for Vue.js",
+  "author": {
+    "name": "Brandon Klimek",
+    "url": "https://github.com/sixthpoint/"
+  },
+  "keywords": [
+    "typescript",
+    "vue-query-builder"
+  ],
+  "private": false,
+  "scripts": {
+    "preversion-test": "echo \"Running tests for version $npm_package_version...\" && yarn run test:unit",
+    "preversion": "yarn run preversion-test",
+    "serve": "vue-cli-service serve dev/main.ts",
+    "build": "vue-cli-service build --target lib src/QueryBuilder.vue",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint src/ tests/ dev/"
+  },
+  "main": "dist/query-builder-vue.umd.js",
+  "browser": "dist/query-builder-vue.common.js",
+  "jsdelivr": "dist/query-builder-vue.umd.min.js",
+  "unpkg": "dist/query-builder-vue.umd.min.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "/dist/*.js",
+    "/dist/*.js.map",
+    "/types/*.d.ts"
+  ],
+  "dependencies": {
+    "@types/sortablejs": "^1.10.2",
+    "core-js": "^3.3.2",
+    "sortablejs": "^1.11.2-alpha.4",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.0.0",
+    "vuedraggable": "^2.24.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "@vue/cli-plugin-babel": "^4.0.5",
+    "@vue/cli-plugin-eslint": "^4.0.5",
+    "@vue/cli-plugin-typescript": "^4.0.5",
+    "@vue/cli-plugin-unit-jest": "^4.1.2",
+    "@vue/cli-service": "^4.0.5",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/test-utils": "^1.1.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.9.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "lint-staged": "^11.1.2",
+    "sass": "^1.49.9",
+    "sass-loader": "^10.2.0",
+    "typescript": "^4.0.3",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts}": [
+      "vue-cli-service lint"
+    ]
+  }
+}
