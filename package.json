@@ -1,5 +1,5 @@
 {
-  "name": "ace-query-builder-vue",
+  "name": "query-builder-ace",
   "version": "1.0.1",
   "license": "MIT",
   "repository": "https://github.com/acewaresystems/query-builder-vue",
@@ -21,10 +21,10 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint src/ tests/ dev/"
   },
-  "main": "dist/ace-query-builder-vue.umd.js",
-  "browser": "dist/ace-query-builder-vue.common.js",
-  "jsdelivr": "dist/ace-query-builder-vue.umd.min.js",
-  "unpkg": "dist/ace-query-builder-vue.umd.min.js",
+  "main": "dist/query-builder-ace.umd.js",
+  "browser": "dist/query-builder-ace.common.js",
+  "jsdelivr": "dist/query-builder-ace.umd.min.js",
+  "unpkg": "dist/query-builder-ace.umd.min.js",
   "types": "./types/index.d.ts",
   "files": [
     "/dist/*.js",
