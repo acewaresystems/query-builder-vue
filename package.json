@@ -1,6 +1,6 @@
 {
   "name": "query-builder-ace",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "repository": "https://github.com/acewaresystems/query-builder-vue",
   "description": "A query-builder library for Vue.js",
@@ -26,11 +26,7 @@
   "jsdelivr": "dist/query-builder-ace.umd.min.js",
   "unpkg": "dist/query-builder-ace.umd.min.js",
   "types": "./types/index.d.ts",
-  "files": [
-    "/dist/*.js",
-    "/dist/*.js.map",
-    "/types/*.d.ts"
-  ],
+  "files": ["dist/**"],
   "dependencies": {
     "@types/sortablejs": "^1.10.2",
     "core-js": "^3.3.2",

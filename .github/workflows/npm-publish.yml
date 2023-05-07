@@ -25,9 +25,8 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: https://registry.npmjs.org/
-          scope: '@aceware'
       - run: yarn
-      - run: yarn publish  --access public
+      - run: yarn publish --access public
 #      - run: npm ci
 #      - run: npm publish --access public
         env:
