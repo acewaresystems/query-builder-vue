@@ -9,7 +9,7 @@ import QueryBuilderGroup from './QueryBuilderGroup.vue';
 
 @Component({
   components: {
-  QueryBuilderGroup,
+  QueryBuilderGroup
   }
   })
 export default class QueryBuilder extends Vue {

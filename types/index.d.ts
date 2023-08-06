@@ -1,11 +1,11 @@
 import { Component } from 'vue';
 import { SortableOptions } from 'sortablejs';
-export enum RuleSetComparator {
+export const enum RuleSetComparator {
   AND = 'AND',
   OR = 'OR'
 }
 
-export enum RuleConditions {
+export const enum RuleConditions {
   EQUALS='EQUALS',
   NOT_EQUALS='NOT_EQUALS',
   GREATER_THAN='GREATER_THAN',
