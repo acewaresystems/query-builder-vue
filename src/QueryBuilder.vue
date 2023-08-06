@@ -6,7 +6,7 @@ import { isQueryBuilderConfig, isRuleSet } from '@/guards';
 import { QueryBuilderConfig, RuleSet } from '@/types';
 import MergeTrap from '@/MergeTrap';
 import QueryBuilderGroup from './QueryBuilderGroup.vue';
-import {RuleSetComparator, RuleConditions} from "@/constants";
+import {RuleSetComparator} from "../types/constants";
 
 @Component({
   components: {

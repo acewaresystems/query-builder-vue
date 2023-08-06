@@ -5,7 +5,7 @@ import QueryBuilderRule from '@/QueryBuilderRule.vue';
 import { QueryBuilderConfig } from '@/types';
 import App from '../components/App.vue';
 import Component from '../components/Component.vue';
-import {RuleConditions, RuleSetComparator} from "@/constants";
+import {RuleConditions, RuleSetComparator} from "../../types/constants";
 
 interface QueryBuilderTemplate {
   value: any,

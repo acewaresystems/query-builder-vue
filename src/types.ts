@@ -1,6 +1,6 @@
 import Vue, { Component } from 'vue';
 import { SortableOptions } from 'sortablejs';
-import {RuleConditions, RuleSetComparator} from "@/constants";
+import {RuleConditions, RuleSetComparator} from "../types/constants";
 
 export interface Rule {
   column: string

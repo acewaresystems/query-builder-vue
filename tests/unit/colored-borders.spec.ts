@@ -7,7 +7,7 @@ import QueryBuilder from '@/QueryBuilder.vue';
 import QueryBuilderGroup from '@/QueryBuilderGroup.vue';
 import QueryBuilderChild from '@/QueryBuilderChild.vue';
 import Component from '../components/Component.vue';
-import {RuleConditions, RuleSetComparator} from "@/constants";
+import {RuleConditions, RuleSetComparator} from "../../types/constants";
 
 describe('Testing drag\'n\'drop related features', () => {
   const config: QueryBuilderConfig = {

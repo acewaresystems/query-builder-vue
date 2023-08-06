@@ -126,7 +126,7 @@ import InputSelection from './Input.vue';
 import NumberSelection from './Number.vue';
 import GroupCtrlSlot from './GroupCtrlSlot.vue';
 import RuleSlot from './RuleSlot.vue';
-import {RuleConditions, RuleSetComparator} from "@/constants";
+import {RuleConditions, RuleSetComparator} from "../types/constants";
 
 @Component({
   computed: {

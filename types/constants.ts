@@ -1,9 +1,9 @@
-export const enum RuleSetComparator {
+export enum RuleSetComparator {
   AND = 'AND',
   OR = 'OR'
 }
 
-export const enum RuleConditions {
+export enum RuleConditions {
   EQUALS='EQUALS',
   NOT_EQUALS='NOT_EQUALS',
   GREATER_THAN='GREATER_THAN',

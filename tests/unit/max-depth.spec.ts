@@ -13,7 +13,7 @@ import {
   RuleSet,
 } from '@/types';
 import Component from '../components/Component.vue';
-import {RuleConditions, RuleSetComparator} from "@/constants";
+import {RuleConditions, RuleSetComparator} from "../../types/constants";
 
 interface QueryBuilderGroupInterface extends Vue {
   depth: number,

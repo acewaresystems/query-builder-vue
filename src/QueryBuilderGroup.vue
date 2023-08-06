@@ -20,7 +20,7 @@ import {
 import { isQueryBuilderConfig, isRule } from '@/guards';
 import MergeTrap from '@/MergeTrap';
 import QueryBuilderChild from './QueryBuilderChild.vue';
-import {RuleSetComparator} from "@/constants";
+import {RuleSetComparator} from "../types/constants";
 
 @Component({
   components: {

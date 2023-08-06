@@ -9,7 +9,7 @@ import {
   RuleSet,
 } from '@/types';
 import Component from '../components/Component.vue';
-import {RuleConditions, RuleSetComparator} from "@/constants";
+import {RuleConditions, RuleSetComparator} from "../../types/constants";
 
 // Schedule a microtask, so all pending promises can be executed
 const flushPromises = (): Promise<void> => new Promise(res => setTimeout(res, 0));
