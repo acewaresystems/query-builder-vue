@@ -16,11 +16,11 @@ import {
   GroupOperatorSlotProps,
   GroupCtrlSlotProps,
   QueryBuilderGroup as QueryBuilderGroupInterface,
-  RuleSetComparator,
 } from '@/types';
 import { isQueryBuilderConfig, isRule } from '@/guards';
 import MergeTrap from '@/MergeTrap';
 import QueryBuilderChild from './QueryBuilderChild.vue';
+import {RuleSetComparator} from "@/constants";
 
 @Component({
   components: {

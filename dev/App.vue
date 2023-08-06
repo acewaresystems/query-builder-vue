@@ -119,13 +119,14 @@ import { Component, Vue } from 'vue-property-decorator';
 
 import QueryBuilder from '@/QueryBuilder.vue';
 import {
-  QueryBuilderConfig, RuleConditions, RuleSet, RuleSetComparator,
+  QueryBuilderConfig, RuleSet,
 } from '@/types';
 
 import InputSelection from './Input.vue';
 import NumberSelection from './Number.vue';
 import GroupCtrlSlot from './GroupCtrlSlot.vue';
 import RuleSlot from './RuleSlot.vue';
+import {RuleConditions, RuleSetComparator} from "@/constants";
 
 @Component({
   computed: {
