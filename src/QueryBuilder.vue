@@ -3,9 +3,10 @@ import {
   Component, Prop, Provide, Vue, Watch,
 } from 'vue-property-decorator';
 import { isQueryBuilderConfig, isRuleSet } from '@/guards';
-import { QueryBuilderConfig, RuleSet, RuleSetComparator } from '@/types';
+import { QueryBuilderConfig, RuleSet } from '@/types';
 import MergeTrap from '@/MergeTrap';
 import QueryBuilderGroup from './QueryBuilderGroup.vue';
+import {RuleSetComparator, RuleConditions} from "@/constants";
 
 @Component({
   components: {
