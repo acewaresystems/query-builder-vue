@@ -1,12 +1,13 @@
 import { mount } from '@vue/test-utils';
 import Draggable from 'vuedraggable';
 import {
-  QueryBuilderConfig, RuleConditions, RuleSet, RuleSetComparator,
+  QueryBuilderConfig, RuleSet,
 } from '@/types';
 import QueryBuilder from '@/QueryBuilder.vue';
 import QueryBuilderGroup from '@/QueryBuilderGroup.vue';
 import QueryBuilderChild from '@/QueryBuilderChild.vue';
 import Component from '../components/Component.vue';
+import {RuleConditions, RuleSetComparator} from "@/constants";
 
 describe('Testing drag\'n\'drop related features', () => {
   const config: QueryBuilderConfig = {

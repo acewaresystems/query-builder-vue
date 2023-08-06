@@ -1,11 +1,12 @@
 import { mount } from '@vue/test-utils';
 import {
-  QueryBuilderConfig, Rule, RuleConditions, RuleSet, RuleSetComparator,
+  QueryBuilderConfig, Rule, RuleSet,
 } from '@/types';
 import QueryBuilder from '@/QueryBuilder.vue';
 import QueryBuilderGroup from '@/QueryBuilderGroup.vue';
 import QueryBuilderRule from '@/QueryBuilderRule.vue';
 import Component from '../components/Component.vue';
+import {RuleConditions, RuleSetComparator} from "@/constants";
 
 describe('Testing slot related features', () => {
   const propsData: { value: RuleSet, config: QueryBuilderConfig } = {

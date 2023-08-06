@@ -4,12 +4,11 @@ import QueryBuilderChild from '@/QueryBuilderChild.vue';
 import {
   QueryBuilderConfig,
   Rule,
-  RuleConditions,
   RuleDefinition,
   RuleSet,
-  RuleSetComparator,
 } from '@/types';
 import Component from '../components/Component.vue';
+import {RuleConditions, RuleSetComparator} from "@/constants";
 
 interface QueryBuilderChildInterface extends Vue {
   component: VueComponent,

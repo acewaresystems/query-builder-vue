@@ -10,11 +10,10 @@ import {
   GroupCtrlSlotProps,
   QueryBuilderConfig,
   Rule,
-  RuleConditions,
   RuleSet,
-  RuleSetComparator,
 } from '@/types';
 import Component from '../components/Component.vue';
+import {RuleConditions, RuleSetComparator} from "@/constants";
 
 interface QueryBuilderGroupInterface extends Vue {
   depth: number,

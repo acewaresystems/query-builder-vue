@@ -6,11 +6,10 @@ import {
   QueryBuilderConfig,
   QueryBuilderGroup as QueryBuilderGroupInterface,
   Rule,
-  RuleConditions,
   RuleSet,
-  RuleSetComparator,
 } from '@/types';
 import Component from '../components/Component.vue';
+import {RuleConditions, RuleSetComparator} from "@/constants";
 
 // Schedule a microtask, so all pending promises can be executed
 const flushPromises = (): Promise<void> => new Promise(res => setTimeout(res, 0));
