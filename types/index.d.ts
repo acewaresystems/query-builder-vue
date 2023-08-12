@@ -11,6 +11,7 @@ export interface Rule {
 
 export interface RuleSet {
   comparator: RuleSetComparator,
+  // @ts-ignore
   children: Array<RuleSet | Rule>,
 }
 
@@ -24,6 +25,7 @@ export interface RuleDefinition {
   conditions: RuleConditions[]
   component: Component,
   initialValue?: any,
+  dataType?: string
 }
 
 export interface QueryBuilderConfig {
